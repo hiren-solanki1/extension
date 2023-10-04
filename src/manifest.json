@@ -1,19 +1,21 @@
 {
   "name": "Great Extension",
   "version": "1.0",
-  "description": "Build an Extension with Angular",
+  "description": "Track your important time",
   "manifest_version": 3,
+  "host_permissions": ["<all_urls>"],
   "permissions": [
-      "activeTab",
-      "webNavigation",
-      "storage",
-      "scripting"
+    "activeTab",
+    "webNavigation",
+    "storage",
+    "scripting",
+    "cookies"
   ],
   "background": {
     "service_worker": "background.js",
     "type": "module"
   },
   "action": {
-      "default_popup": "index.html"
+    "default_popup": "index.html"
   }
 }
